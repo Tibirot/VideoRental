@@ -185,11 +185,49 @@
     <Compile Include="Migrations\201903151605549_InitialModel.Designer.cs">
       <DependentUpon>201903151605549_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903151731199_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201903151731199_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201903151731199_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151734256_AddMembershipType.cs" />
+    <Compile Include="Migrations\201903151734256_AddMembershipType.Designer.cs">
+      <DependentUpon>201903151734256_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151737232_PopulaingMembershipTypes.cs" />
+    <Compile Include="Migrations\201903151737232_PopulaingMembershipTypes.Designer.cs">
+      <DependentUpon>201903151737232_PopulaingMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151743493_ApplyAnnotationsToCustomer.cs" />
+    <Compile Include="Migrations\201903151743493_ApplyAnnotationsToCustomer.Designer.cs">
+      <DependentUpon>201903151743493_ApplyAnnotationsToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151800525_AddedNamePropToMembershipType.cs" />
+    <Compile Include="Migrations\201903151800525_AddedNamePropToMembershipType.Designer.cs">
+      <DependentUpon>201903151800525_AddedNamePropToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151801288_PolatnMembersipTypeNaes.cs" />
+    <Compile Include="Migrations\201903151801288_PolatnMembersipTypeNaes.Designer.cs">
+      <DependentUpon>201903151801288_PolatnMembersipTypeNaes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151808130_AddedCustomerBirthdate.cs" />
+    <Compile Include="Migrations\201903151808130_AddedCustomerBirthdate.Designer.cs">
+      <DependentUpon>201903151808130_AddedCustomerBirthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151823060_AddedMoviePropsAndGenre.cs" />
+    <Compile Include="Migrations\201903151823060_AddedMoviePropsAndGenre.Designer.cs">
+      <DependentUpon>201903151823060_AddedMoviePropsAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151828521_PopultnGeresTable.cs" />
+    <Compile Include="Migrations\201903151828521_PopultnGeresTable.Designer.cs">
+      <DependentUpon>201903151828521_PopultnGeresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -278,6 +316,33 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903151605549_InitialModel.resx">
       <DependentUpon>201903151605549_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151731199_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201903151731199_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151734256_AddMembershipType.resx">
+      <DependentUpon>201903151734256_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151737232_PopulaingMembershipTypes.resx">
+      <DependentUpon>201903151737232_PopulaingMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151743493_ApplyAnnotationsToCustomer.resx">
+      <DependentUpon>201903151743493_ApplyAnnotationsToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151800525_AddedNamePropToMembershipType.resx">
+      <DependentUpon>201903151800525_AddedNamePropToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151801288_PolatnMembersipTypeNaes.resx">
+      <DependentUpon>201903151801288_PolatnMembersipTypeNaes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151808130_AddedCustomerBirthdate.resx">
+      <DependentUpon>201903151808130_AddedCustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151823060_AddedMoviePropsAndGenre.resx">
+      <DependentUpon>201903151823060_AddedMoviePropsAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151828521_PopultnGeresTable.resx">
+      <DependentUpon>201903151828521_PopultnGeresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
