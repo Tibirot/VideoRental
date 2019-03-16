@@ -225,6 +225,10 @@
     <Compile Include="Migrations\201903161353184_AddedMovieForms.Designer.cs">
       <DependentUpon>201903161353184_AddedMovieForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903162042084_CheckMigration.cs" />
+    <Compile Include="Migrations\201903162042084_CheckMigration.Designer.cs">
+      <DependentUpon>201903162042084_CheckMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -232,6 +236,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\CustomerFormViewModel.cs" />
     <Compile Include="Models\MovieFormViewModel.cs" />
@@ -354,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903161353184_AddedMovieForms.resx">
       <DependentUpon>201903161353184_AddedMovieForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903162042084_CheckMigration.resx">
+      <DependentUpon>201903162042084_CheckMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

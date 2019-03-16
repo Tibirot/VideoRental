@@ -14,12 +14,15 @@ namespace VideoRental.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        [Required]
         [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
 
         [Display(Name = "Date Added")]
         public DateTime DateAdded { get; set; }
 
+        [Required]
+        [Range(1, 20)]
         [Display(Name = "Copies Left")]
         public int NumberInStock { get; set; }
 

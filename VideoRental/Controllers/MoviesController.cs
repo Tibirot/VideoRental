@@ -51,9 +51,8 @@ namespace VideoRental.Controllers
                 return HttpNotFound();
             }
 
-            var viewModel = new MovieFormViewModel
+            var viewModel = new MovieFormViewModel(movie)
             {
-                Movie = movie,
                 Genres = _context.Genres.ToList()
             };
 
@@ -72,8 +71,18 @@ namespace VideoRental.Controllers
             return View(movie);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                    Genres = _context.Genres.ToList()
+                };
+            }
+
             if (movie.Id == 0)
             {
                 movie.DateAdded = DateTime.Now;
