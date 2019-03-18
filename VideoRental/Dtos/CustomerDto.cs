@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using VideoRental.Models;
 
 namespace VideoRental.Dtos
@@ -21,5 +18,7 @@ namespace VideoRental.Dtos
         public DateTime? Birthdate { get; set; }
 
         public byte MembershipTypeId { get; set; }
+
+        public MembershipTypeDto MembershipType { get; set; }
     }
 }

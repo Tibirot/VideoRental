@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using AutoMapper;
+﻿using AutoMapper;
 using VideoRental.Dtos;
 using VideoRental.Models;
 
@@ -12,17 +8,20 @@ namespace VideoRental.App_Start
     {
         public MappingProfile()
         {
-            //CUSTOMER MAPPING
             Mapper.CreateMap<Customer, CustomerDto>();
             Mapper.CreateMap<CustomerDto, Customer>();
-            Mapper.CreateMap<Customer, CustomerDto>()
+            Mapper.CreateMap<Movie, MovieDto>();
+
+
+            // Dto to Domain
+            Mapper.CreateMap<CustomerDto, Customer>()
                 .ForMember(c => c.Id, opt => opt.Ignore());
 
-            //MOVIE MAPPING
-            Mapper.CreateMap<Movie, MovieDto>();
-            Mapper.CreateMap<MovieDto, Movie>();
-            Mapper.CreateMap<Movie, MovieDto>()
+            Mapper.CreateMap<MovieDto, Movie>()
                 .ForMember(c => c.Id, opt => opt.Ignore());
+
+            //MEMBERSHIP TYPE MAPPING 
+            Mapper.CreateMap<MembershipType, MembershipTypeDto>();
 
         }
     }
