@@ -25,10 +25,16 @@ namespace VideoRental.Controllers
 
         public ActionResult Index()
         {
+            if (User.IsInRole(RoleName.CanManageMovies))
+            {
+                return View("List");
 
-            return View();
+            }
+            
+            return View("ReadOnlyList");
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
@@ -41,6 +47,7 @@ namespace VideoRental.Controllers
             return View("MovieForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
